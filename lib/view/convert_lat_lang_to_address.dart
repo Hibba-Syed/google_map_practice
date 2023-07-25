@@ -9,7 +9,9 @@ class ConvertLatLangToAddress extends StatefulWidget {
 }
 
 class _ConvertLatLangToAddressState extends State<ConvertLatLangToAddress> {
+
   String stAddress = "",stAdd = "";
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

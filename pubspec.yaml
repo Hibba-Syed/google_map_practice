@@ -21,6 +21,11 @@ dependencies:
   cupertino_icons: ^1.0.2
   google_maps_flutter: ^2.3.1
   geolocator: ^9.0.2
+  uuid: ^3.0.7
+  http: ^1.1.0
+  custom_info_window: ^1.0.1
+  google_map_polyline_new: ^0.3.0+2
+  #flutter_polyline_points: ^1.0.0
   #flutter_geocoder: ^0.2.2-nullsafety
   geocoding: ^2.1.0
 
@@ -43,8 +48,8 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-  # assets:
-  #   - images/a_dot_burr.jpeg
+  assets:
+     - assets/
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

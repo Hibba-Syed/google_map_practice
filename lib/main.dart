@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_map_practice/view/convert_lat_lang_to_address.dart';
+import 'package:google_map_practice/view/custom_marker_screen.dart';
 import 'package:google_map_practice/view/home_view.dart';
 
 void main() {
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const HomeView(),
+      home: const CustomMarkerScreen(),
       debugShowCheckedModeBanner: false,
     );
   }

@@ -20,14 +20,14 @@ class _HomeViewState extends State<HomeView> {
   );
   List<Marker> _markers = [];
   final List<Marker> _list = [
-    Marker(
+    const Marker(
         markerId: MarkerId("1"),
       position: LatLng(31.474744,74.3801192,),
       infoWindow: InfoWindow(
         title: "my current Location"
       )
     ),
-    Marker(markerId: MarkerId("2"),
+    const Marker(markerId: MarkerId("2"),
         position: LatLng(31.4839221,74.3946335,),
         infoWindow: InfoWindow(
             title: "Devruptors"
@@ -72,7 +72,6 @@ class _HomeViewState extends State<HomeView> {
       );
       final GoogleMapController controller = await _controller.future;
       controller.animateCamera(CameraUpdate.newCameraPosition(cameraPosition));
-     // stAdd = "${value.latitude} ${value.longitude}";
       List<Placemark> placemarks = await placemarkFromCoordinates(value.latitude, value.longitude);
         stAdd = "${placemarks.reversed.last.isoCountryCode}\n"
             "${placemarks.reversed.last.administrativeArea}"
