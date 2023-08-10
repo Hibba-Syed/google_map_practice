@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:google_map_practice/view/convert_lat_lang_to_address.dart';
-import 'package:google_map_practice/view/custom_marker_screen.dart';
-import 'package:google_map_practice/view/home_view.dart';
+import 'package:google_map_practice/tab_bar/custom_tabbar.dart';
+import 'package:google_map_practice/tab_bar/tab_bar.dart';
+import 'date_time/date_time.dart';
 
 void main() {
   runApp(const MyApp());
 }
-
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
@@ -17,9 +16,9 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
+      //  useMaterial3: true,
       ),
-      home: const CustomMarkerScreen(),
+      home: const CustomTabBar(),
       debugShowCheckedModeBanner: false,
     );
   }

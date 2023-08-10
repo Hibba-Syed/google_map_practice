@@ -25,6 +25,8 @@ dependencies:
   http: ^1.1.0
   custom_info_window: ^1.0.1
   google_map_polyline_new: ^0.3.0+2
+  shared_preferences: ^2.2.0
+  intl: ^0.18.1
   #flutter_polyline_points: ^1.0.0
   #flutter_geocoder: ^0.2.2-nullsafety
   geocoding: ^2.1.0
